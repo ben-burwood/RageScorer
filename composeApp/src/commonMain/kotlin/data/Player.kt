@@ -6,5 +6,8 @@ typealias PlayerId = Int
 
 data class Player(
     val id: PlayerId,
-    val name: String,
-)
+    var name: String = "Player ${id + 1}",
+) {
+    // Defines the Order of Play
+    var playerNumber = id
+}

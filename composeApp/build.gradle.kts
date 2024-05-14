@@ -57,6 +57,7 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            implementation(libs.compose.lifecycle.viewmodel)
         }
         androidMain.dependencies {
             implementation(libs.compose.ui.tooling.preview)
